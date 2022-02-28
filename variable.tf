@@ -8,7 +8,7 @@ variable "profile" {
 }
 
 variable "ssh_key" {
-  default = "devops-mbp"
+  default = "monitor-key"
 }
 
 variable "ami_id" {
