@@ -6,7 +6,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "blick-devops"
-    key    = "blick-devops/terraform-backend/jenkins-statefile"
+    key    = "terraform-backend/blackbox-statefile"
     region = "ca-central-1"
   }
 }
