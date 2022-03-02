@@ -28,7 +28,7 @@ variable "instance_count" {
 }
 
 variable "tag_name" {
-  default = "endpoints monitoring server"
+  default = "blackbox monitoring server"
 }
 
 variable "environment" {
