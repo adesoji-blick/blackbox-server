@@ -15,7 +15,7 @@ variable "ami_id" {
   default = "ami-07140ec01fc325690"
 }
 
-variable "monitor_instance_type" {
+variable "instance_type" {
   default = "t2.micro"
 }
 
@@ -23,20 +23,20 @@ variable "monitor_instance_type" {
 #   default = "ec2.py-access"
 # }
 
-variable "monitor_instance_count" {
+variable "instance_count" {
   default = "1"
 }
 
-variable "monitor_tag_name" {
+variable "tag_name" {
   default = "endpoints monitoring server"
 }
 
-variable "monitor_environment" {
+variable "environment" {
   default = "development"
 }
 
 variable "application" {
-  default = "monitoring stack"
+  default = "blackbox monitor stack"
 }
 
 ## network variables
@@ -50,7 +50,7 @@ variable "subnet_id" {
 
 ## security group variables
 variable "sg_name" {
-  default = "monitoring server"
+  default = "blackbox server"
 }
 
 variable "httpport" {

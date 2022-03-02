@@ -1,6 +1,6 @@
 # Provisioning Monitoring Security Group
 
-resource "aws_security_group" "monitor_sg" {
+resource "aws_security_group" "blackbox_sg" {
   name   = "${var.sg_name}-Sg"
   vpc_id = var.vpc_id
 

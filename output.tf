@@ -1,5 +1,5 @@
-output "instance-public-ip" {
-  value = aws_instance.monitor-server.*.public_ip
+output "blackbox-public-ip" {
+  value = aws_instance.blackbox-server.*.public_ip
 }
 
 # output "elastic-ip" {

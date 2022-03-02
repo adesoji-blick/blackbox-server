@@ -1,3 +1,3 @@
-data "template_file" "monitoring_installation" {
+data "template_file" "blackbox_installation" {
   template = file("${path.module}/scripts/installations.sh")
 }
